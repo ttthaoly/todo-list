@@ -1,0 +1,45 @@
+.list {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+  }
+  .todo-list {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+  }
+  .todo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    gap: 5px;
+  }
+  .todo .img {
+    width: 20px;
+    height: 20px;
+  }
+  .todo p {
+    margin: 0px;
+  }
+  .check {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+  }
+  .checkbox {
+    margin: 0px;
+  }
+  
+  .done-list {
+    width: 45%;
+  }
+  
+  .div1,
+  .div2 {
+    height: auto;
+  }
+  
