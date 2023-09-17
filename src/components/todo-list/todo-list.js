@@ -22,8 +22,6 @@ class TodoList extends React.Component {
   constructor(props) {
 	super(props);
 	this.state = {
-  	lists: [],
-  	listsDone: [],
 	  count: 0,
 
 	};
@@ -90,7 +88,7 @@ componentDidMount() {
     	<div className="list">
 			<div className="todo-list">
         		<h3>Todo List</h3>
-        		{this.state.lists.map((data, index) => (
+        		{this.props.lists.map((data, index) => (
           		<div key={makeid(6)} className="todo">
             		<p>{data}</p>
             		<div className="check">
@@ -121,7 +119,7 @@ componentDidMount() {
       		</div>
       		<div className="done-list">
         		<h3>Done List</h3>
-        		{this.state.listsDone.map((data, index) => (
+        		{this.props.listsDone.map((data, index) => (
           		<div key={makeid(6)} className="todo">
             		<p>{data}</p>
             		<div className="check">
